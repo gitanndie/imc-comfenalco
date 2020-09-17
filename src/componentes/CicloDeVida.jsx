@@ -40,7 +40,8 @@ export default class CiclodeVida extends Component {
        this.setState({quotes : data.quotes}) */
     /* let  respuesta =  await fetch("https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json");
         let data = await respuesta.json();
-        this.setState({quotes : data.quotes}) */     
+        this.setState({quotes : data.quotes}) */
+
         let  respuesta =  await axios.get("https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json");
         this.setState({quotes : respuesta.data.quotes}) 
     }
